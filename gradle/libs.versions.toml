@@ -1,0 +1,23 @@
+[versions]
+moddev = "2.0.148"
+spotless = "8.11.0"
+spotless-changelog = "3.1.2"
+
+publish = "2.2.1"
+
+rollinggate = "1.1.0+build.69"
+
+junit = "6.1.3"
+
+[plugins]
+moddev = { id = "net.neoforged.moddev", version.ref = "moddev" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+spotless-changelog = { id = "com.diffplug.spotless-changelog", version.ref = "spotless-changelog" }
+mod-publish-plugin = { id = "me.modmuss50.mod-publish-plugin", version.ref = "publish" }
+
+[libraries]
+rollinggate = { group = "dev.anvilcraft.rg", name = "RollingGate", version.ref = "rollinggate" }
+
+junit-jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
+junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junit" }

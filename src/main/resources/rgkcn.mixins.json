@@ -1,0 +1,26 @@
+{
+    "required": true,
+    "package": "com.kinhiro.rgkcn.mixin",
+    "compatibilityLevel": "JAVA_25",
+    "mixins": [
+        "MixinBlockItem",
+        "MixinBlockPlaceContext",
+        "MixinDispenserBlock",
+        "MixinHopperBlock",
+        "MixinHopperBlockEntity",
+        "MixinPlayer",
+        "MixinServerPlayerGameMode",
+        "MixinShulkerBoxBlockEntity",
+        "MixinStandingAndWallBlockItem",
+        "MixinUseOnContext"
+    ],
+    "client": [
+        "MixinLevelRenderer"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+  }
+}

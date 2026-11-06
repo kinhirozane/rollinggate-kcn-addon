@@ -1,0 +1,17 @@
+{
+    "message.rgkcn.hopper_counter.counting": "%s--0 hasn't started counting yet",
+    "message.rgkcn.hopper_counter.empty": "No items have been counted yet",
+    "message.rgkcn.hopper_counter.items": "0 Items for channel --%s--0 (--%s--0 m%s), --0 total: --10 %s--0 , (--%s--0 /h):--le [x]--^7 reset--!/counter %s reset",
+    "message.rgkcn.hopper_counter.reset": "0 Restarted the hopper counter for channel %s",
+    "message.rgkcn.hopper_counter.reset_all": "0 Restarted all hopper counters",
+    "message.rgkcn.hopper_counter.total": "0 No items for channel --%s--0 yet (%s m.%s)--le [x]--^7 reset--!/counter %s reset",
+    "rgkcn.rolling_gate.rule.command_counter": "Counter Command",
+    "rgkcn.rolling_gate.rule.command_counter.desc": "Tracks item collection rates across hopper counter channels",
+    "rgkcn.rolling_gate.rule.creative_player_no_clip": "Creative Player No-Clip",
+    "rgkcn.rolling_gate.rule.creative_player_no_clip.desc": "Flying players in Creative mode can pass through blocks without triggering block updates",
+    "rgkcn.rolling_gate.rule.echo_wrench": "Echo Wrench",
+    "rgkcn.rolling_gate.rule.echo_wrench.desc": "Uses Echo Shards as wrenches to manipulate block orientation",
+    "rgkcn.rolling_gate.rule.hopper_counters": "Hopper Counters",
+    "rgkcn.rolling_gate.rule.hopper_counters.desc": "Hoppers facing any wool block (channel) function as counters",
+    "rolling_gate.category.rgkcn": "RGKCN"
+}
