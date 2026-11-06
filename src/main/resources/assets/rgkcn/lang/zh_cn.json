@@ -1,0 +1,17 @@
+{
+    "message.rgkcn.hopper_counter.counting": "%s--0  频道还没开始计数",
+    "message.rgkcn.hopper_counter.empty": "尚未统计到任何物品",
+    "message.rgkcn.hopper_counter.items": "%s--0  频道的物品，--0 (--%s--0 m%s), --0 总计：--10 %s--0 , (--%s--0 /h):--le [x]--^7 重置--!/counter %s reset",
+    "message.rgkcn.hopper_counter.reset": "0 已重启 %s 频道的漏斗计数器",
+    "message.rgkcn.hopper_counter.reset_all": "0 已重启所有漏斗计数器",
+    "message.rgkcn.hopper_counter.total": "%s--0  频道尚无物品 (%s m.%s)--le [x]--^7 重置--!/counter %s reset",
+    "rgkcn.rolling_gate.rule.command_counter": "/counter 命令",
+    "rgkcn.rolling_gate.rule.command_counter.desc": "统计各频道漏斗计数器的物品收集效率",
+    "rgkcn.rolling_gate.rule.creative_player_no_clip": "创造玩家无实体碰撞",
+    "rgkcn.rolling_gate.rule.creative_player_no_clip.desc": "创造玩家飞行时可以任意穿过方块且不触发方块更新",
+    "rgkcn.rolling_gate.rule.echo_wrench": "回响扳手",
+    "rgkcn.rolling_gate.rule.echo_wrench.desc": "使用回响碎片作为扳手调整方块朝向",
+    "rgkcn.rolling_gate.rule.hopper_counters": "漏斗计数器",
+    "rgkcn.rolling_gate.rule.hopper_counters.desc": "朝向任意羊毛方块输出的漏斗均作为计数器，每种羊毛颜色代表一个独立频道",
+    "rolling_gate.category.rgkcn": "RGKCN"
+}
