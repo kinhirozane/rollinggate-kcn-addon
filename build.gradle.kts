@@ -230,7 +230,13 @@ publishMods {
 }
 
 tasks.clean {
-    setDelete(fileTree(layout.buildDirectory) { exclude("moddev/**") })
+    doFirst {
+        val dir = layout.buildDirectory.get().asFile
+        setDelete(
+            if (dir.resolve("moddev").exists()) dir.listFiles()?.filter { f -> f.name != "moddev" } ?: emptyList()
+            else listOf(dir)
+        )
+    }
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
