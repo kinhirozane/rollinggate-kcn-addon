@@ -147,7 +147,8 @@ val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata"
         "mod_license" to providers.gradleProperty("mod.license").get(),
         "mod_version" to modVersion,
         "mod_description" to providers.gradleProperty("mod.description").get(),
-        "mod_authors" to providers.gradleProperty("mod.authors").get()
+        "mod_authors" to providers.gradleProperty("mod.authors").get(),
+        "rolling_gate_version" to libs.versions.rollinggate.get()
     )
 
     inputs.properties(replaceProperties)
@@ -224,7 +225,12 @@ publishMods {
         repository = "kinhirozane/rollinggate-kcn-addon"
         commitish = "master"
         tagName = "v${project.version}"
+        displayName = "${providers.gradleProperty("mod.name").get()} v${project.version}"
     }
+}
+
+tasks.clean {
+    setDelete(fileTree(layout.buildDirectory) { exclude("moddev/**") })
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
