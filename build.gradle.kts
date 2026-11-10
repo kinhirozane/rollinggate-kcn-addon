@@ -196,7 +196,7 @@ publishMods {
     changelog = spotlessChangelog.parsedChangelog.unreleasedChanges().trim()
     version = project.version.toString()
     type = ReleaseType.STABLE
-    displayName = providers.gradleProperty("mod.name")
+    displayName = "${providers.gradleProperty("mod.name").get()} v${project.version}"
     modLoaders.add("neoforge")
 
     curseforge {
@@ -225,7 +225,6 @@ publishMods {
         repository = "kinhirozane/rollinggate-kcn-addon"
         commitish = "master"
         tagName = "v${project.version}"
-        displayName = "${providers.gradleProperty("mod.name").get()} v${project.version}"
     }
 }
 
