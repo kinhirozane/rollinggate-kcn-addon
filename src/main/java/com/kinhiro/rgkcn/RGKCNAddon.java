@@ -24,14 +24,18 @@
 package com.kinhiro.rgkcn;
 
 import com.kinhiro.rgkcn.command.RGKCNCommands;
+import com.mojang.logging.LogUtils;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
+import org.slf4j.Logger;
 
 @Mod(RGKCNAddon.NAMESPACE)
 public final class RGKCNAddon {
     public static final String NAMESPACE = "rgkcn";
     public static final String NAME = "RollingGate KCN Addon";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public RGKCNAddon(IEventBus bus) {
         RGKCNCommands.ARGUMENT_TYPES.register(bus);
@@ -39,5 +43,9 @@ public final class RGKCNAddon {
 
     public static Identifier id(String id) {
         return Identifier.fromNamespaceAndPath(NAMESPACE, id);
+    }
+
+    public static boolean isLoaded(final String namespace) {
+        return ModList.get().isLoaded(namespace);
     }
 }

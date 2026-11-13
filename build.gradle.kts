@@ -120,6 +120,8 @@ repositories {
 
 dependencies {
     implementation(libs.rollinggate)
+    compileOnly(libs.siliconedolls)
+    runtimeOnly(libs.siliconedolls)
 
     testImplementation(libs.junit.jupiter.api)
     testRuntimeOnly(libs.junit.jupiter.engine)
