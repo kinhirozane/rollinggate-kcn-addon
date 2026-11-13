@@ -25,6 +25,16 @@ RollingGate KCN Addon（RGKCN）扩展了 RollingGate 的功能，主要面向�
 
 - [RollingGate（卷帘门）](https://github.com/Anvil-Dev/RollingGate)
 
+## 可选联动
+
+### [SiliconeDolls（硅胶假人）](https://github.com/Anvil-Dev/SiliconeDolls)
+
+添加 `/player <name> rejoin` 命令支持，允许曾经生成过的假人在上次退出时所在的维度、位置和朝向重新加入世界。
+
+对于没有历史位置记录的假人，该命令的行为与 `/player <name> spawn` 一致。
+
+该联动为可选功能，未安装硅胶假人时，RGKCN 仍可正常使用。
+
 ## 许可证
 
 许可证信息请参阅 [LICENSE](LICENSE)。

@@ -24,6 +24,17 @@ For detailed information about available rules, configuration, and commands, see
 ## Requirements
 
 - [RollingGate](https://github.com/Anvil-Dev/RollingGate)
+  Optional Integrations
+
+## Optional Integrations
+
+### [SiliconeDolls](https://github.com/Anvil-Dev/SiliconeDolls)
+
+Adds support for the `/player <name> rejoin` command, allowing previously spawned fake players to rejoin the world at their last saved dimension, position, and rotation.
+
+For fake players without a saved position, the command behaves identically to `/player <name> spawn`.
+
+This integration is optional. RGKCN works normally without SiliconeDolls installed.
 
 ## License
 
